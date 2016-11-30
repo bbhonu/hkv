@@ -6,7 +6,6 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-/* line 11, ../scss/_before.scss */
 html {
   color: #222;
   font-size: 1em;
@@ -20,7 +19,6 @@ html {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-/* line 25, ../scss/_before.scss */
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -29,7 +27,6 @@ html {
 /*
  * A better looking default horizontal rule
  */
-/* line 34, ../scss/_before.scss */
 hr {
   display: block;
   height: 1px;
@@ -44,7 +41,6 @@ hr {
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
-/* line 49, ../scss/_before.scss */
 audio,
 canvas,
 iframe,
@@ -57,7 +53,6 @@ video {
 /*
  * Remove default fieldset styles.
  */
-/* line 62, ../scss/_before.scss */
 fieldset {
   border: 0;
   margin: 0;
@@ -67,7 +62,6 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
-/* line 72, ../scss/_before.scss */
 textarea {
   resize: vertical;
 }
@@ -75,7 +69,6 @@ textarea {
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
-/* line 80, ../scss/_before.scss */
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -83,29 +76,109 @@ textarea {
   padding: 0.2em 0;
 }
 
-/* line 1, ../scss/_base.scss */
-.container {
-  max-width: 960px;
+@font-face {
+  font-family: "luculent";
+  src: url(../fonts/luculent.ttf);
+}
+@font-face {
+  font-family: "luculent-bolditalic";
+  src: url(../fonts/luculentbi.ttf);
+}
+@font-face {
+  font-family: "luculent-italic";
+  src: url(../fonts/luculenti.ttf);
+}
+@font-face {
+  font-family: "apercupro";
+  src: url(../fonts/apercu_regular_pro.otf);
+}
+header {
+  font-family: "luculent-bolditalic";
+  font-size: 36px;
 }
 
-/* line 12, ../scss/_base.scss */
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  background-color: white;
+}
+
+body {
+  background-color: black;
+}
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+}
+
+a:link {
+  text-decoration: none;
+  color: #0b0740;
+}
+
+a:visited {
+  color: #0b0740;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #0b0740;
+}
+
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  margin-bottom: 70px;
+}
+
+nav {
+  font-family: "luculent";
+  font-size: 12px;
+}
+nav ul li {
+  display: inline;
+}
+
+h2 {
+  font-family: "luculent-italic";
+  font-size: 26px;
+}
+
+p {
+  font-family: "apercupro";
+  font-size: 10px;
+}
+
+section.intro p {
+  font-size: 25px;
+}
+
+main img {
+  margin-right: 20px;
+}
+
 p {
   display: inline;
 }
 
-@media only screen and (max-width: 550px) {
-  /* line 21, ../scss/_base.scss */
-  p {
-    display: block;
-  }
+section {
+  margin-bottom: 50px;
 }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
 /*
  * Hide visually and from screen readers
  */
-/* line 9, ../scss/_after.scss */
 .hidden {
   display: none !important;
 }
@@ -114,7 +187,6 @@ p {
  * Hide only visually, but have it available for screen readers:
  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 18, ../scss/_after.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -131,7 +203,6 @@ p {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-/* line 35, ../scss/_after.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -145,7 +216,6 @@ p {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-/* line 49, ../scss/_after.scss */
 .invisible {
   visibility: hidden;
 }
@@ -161,7 +231,6 @@ p {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 65, ../scss/_after.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -170,7 +239,6 @@ p {
   /* 2 */
 }
 
-/* line 71, ../scss/_after.scss */
 .clearfix:after {
   clear: both;
 }
@@ -192,7 +260,6 @@ p {
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 @media print {
-  /* line 98, ../scss/_after.scss */
   *,
   *:before,
   *:after,
@@ -209,18 +276,15 @@ p {
     text-shadow: none !important;
   }
 
-  /* line 113, ../scss/_after.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 118, ../scss/_after.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 122, ../scss/_after.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -229,18 +293,15 @@ p {
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  /* line 131, ../scss/_after.scss */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
   }
 
-  /* line 136, ../scss/_after.scss */
   pre {
     white-space: pre-wrap !important;
   }
 
-  /* line 139, ../scss/_after.scss */
   pre,
   blockquote {
     border: 1px solid #999;
@@ -251,18 +312,15 @@ p {
    * Printing Tables:
    * http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  /* line 150, ../scss/_after.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 154, ../scss/_after.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 159, ../scss/_after.scss */
   p,
   h2,
   h3 {
@@ -270,7 +328,6 @@ p {
     widows: 3;
   }
 
-  /* line 166, ../scss/_after.scss */
   h2,
   h3 {
     page-break-after: avoid;

@@ -1,11 +1,132 @@
-.container {
-	max-width: 960px;
+// global styles
+
+@font-face {
+	font-family:"luculent";
+	src: url(../fonts/luculent.ttf);
+}
+
+@font-face {
+	font-family:"luculent-bolditalic";
+	src: url(../fonts/luculentbi.ttf);
+}
+
+@font-face {
+	font-family:"luculent-italic";
+	src: url(../fonts/luculenti.ttf);
+}
+
+@font-face {
+	font-family:"apercupro";
+	src: url(../fonts/apercu_regular_pro.otf);
+}
+
+header {
+	font-family: "luculent-bolditalic";
+	font-size: 36px;
+
 }
 
 
-// p {
-// 	float: right;
-// }
+
+
+
+.container {
+max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    background-color: white;
+}
+
+body {
+	background-color: black;
+}
+
+*, 
+*:before,
+*:after {
+    padding:0;
+    margin:0;
+}
+
+a:link {
+	text-decoration: none;
+		color: rgba(11,7,64,1);
+
+}
+
+a:visited {
+		color: rgba(11,7,64,1);
+
+}
+
+a:hover {
+		text-decoration: none;
+		color: rgba(11,7,64,1);
+
+}
+
+a:active{
+		text-decoration: none;
+		color:black;
+
+		}
+
+
+
+
+header {
+
+
+
+h1 {
+
+}
+}
+
+h2 {
+	margin-bottom: 70px;
+}
+
+nav {
+	font-family: "luculent";
+	font-size: 12px;
+
+
+	ul {
+
+			li{
+						display: inline;
+
+}		
+
+}
+}
+
+
+h2 {
+	font-family: "luculent-italic";
+	font-size: 26px;
+
+}
+
+p {
+	font-family: "apercupro";
+	font-size: 10px;
+}
+
+section.intro {
+	p{
+
+	font-size: 25px;
+	}
+}
+
+main img {
+	margin-right: 20px;
+}
+
+
 
 // desktop styles
 
@@ -13,12 +134,120 @@ p {
 	display: inline;
 }
 
-
-// mobile styles 
-
-@media only screen and (max-width: 550px) {
-
-	p{
-		display: block;
-	}
+section {
+	margin-bottom: 50px;
 }
+
+// susy 
+
+// h1 {
+// 	@include span (3)
+// }
+// nav {
+// 	@include span (8 last)
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// tablet styles
+
+// @media only screen and (max-width: 720px) {
+
+// 	.container {
+// 		margin-left: 20px;
+// 		margin-right: 20px;
+// 	}
+
+// 	section.top {
+// 		display: inline-block;
+// 	}
+// 	nav {
+// 	margin-top: 10px;
+// 	float: right;
+// 	margin-bottom: 150px;
+
+
+
+
+// 	ul {
+// 		position: absolute;
+
+
+// 			li{
+// 		display: inline;
+// 		margin-right: 40px;
+// }		
+
+// }
+// }
+
+// header {
+// 	font-size: 30px;
+// 	float: left;
+// 	margin-right: 10px;
+// }
+
+
+// 	}
+
+
+
+
+
+
+// // mobile styles 
+
+// @media only screen and (max-width: 550px) {
+
+// 	p{
+// 		display: block;
+// 	}
+
+// header {
+// 	float: none;
+// }
+
+// section.top {
+// 	display: block;
+// }
+
+// nav {
+// 	margin-top: 10px;
+// 	float: none;
+// 	margin-bottom: 150px;
+
+
+// 	ul {
+// 		position: absolute;
+
+
+// 			li{
+// 		margin-right: 40px;
+// 				display: block;
+
+// }		
+
+// }
+// }
+// }
