@@ -62,7 +62,6 @@ max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     width: 960px;
-    background-color: white;
 }
 
 body {
@@ -78,24 +77,25 @@ body {
 
 a:link {
 	text-decoration: none;
-		color: rgba(11,7,64,1);
+		color:white;
 
 }
 
 a:visited {
-		color: rgba(11,7,64,1);
+		color: white;
 
 }
 
 a:hover {
 		text-decoration: none;
-		color: rgba(11,7,64,1);
+		color:rgba(165,67,255,1);
 
 }
 
 a:active{
 		text-decoration: none;
-		color:black;
+		color: black;
+		
 
 		}
 
@@ -108,10 +108,15 @@ header {
 }
 
 section.top {
-	margin-top: 40px;
+	padding-top: 40px;
+	background-color:black;
+	color: black;
 }
 
 section.intro {
+	margin-top: 100px;
+	color:black;
+	padding-bottom: 100px;
 }
 
 
@@ -163,16 +168,25 @@ padding: 13px 0px;
 }
 
 .stick {
-	margin-top: 200px;
-	margin-right: -60px;
+	margin-top: 157px;
 	text-align: right;
+	height: 20%;
 	
 	ul {
+			margin-right: -60px;
+
 		position: fixed;
 		li {
 
+			margin-bottom: 15px;
+
 
 			display: block;
+
+			img {
+				width: 13px;
+				height: 13px;
+			}
 
 			a:link {
 
@@ -220,7 +234,7 @@ main section {
 }
 
 main div {	
-	margin-top: -90px;
+	margin-top: -85px;
 }
 
 main {
@@ -267,7 +281,8 @@ main section p {
 }
 
 .stick {
-	@include span (2 last)
+	@include span (2 last);
+	margin-right: -50px;
 
 }
 
