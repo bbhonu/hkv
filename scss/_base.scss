@@ -56,17 +56,19 @@ header {
 
 
 
-
 .container {
 max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     width: 960px;
+    background-color: white;
 }
 
-body {
-	background-color: white;
+.black {
+	background-color: black;
 }
+
+
 
 *, 
 *:before,
@@ -109,14 +111,13 @@ header {
 
 section.top {
 	padding-top: 40px;
-	background-color:black;
 	color: black;
+	
 }
 
 section.intro {
 	margin-top: 100px;
 	color:black;
-	padding-bottom: 100px;
 }
 
 
