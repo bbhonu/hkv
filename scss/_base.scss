@@ -23,9 +23,36 @@
 header {
 	font-family: "luculent-bolditalic";
 	font-size: 36px;
-
+	word-spacing: -12px;
 }
 
+.kern {
+	letter-spacing: -1px;
+}
+
+.kern2 {
+	letter-spacing: 2px;
+}
+
+.kern3 {
+	letter-spacing: 2px;
+}
+
+.kern4 {
+	letter-spacing: -1px;
+}
+
+.kern5 {
+	letter-spacing: 2px;
+}
+
+.kern6 {
+	letter-spacing: -6px;
+}
+
+.kern7{
+	letter-spacing: 1px;
+}
 
 
 
@@ -81,6 +108,7 @@ header {
 }
 
 section.top {
+	margin-top: 40px;
 }
 
 section.intro {
@@ -97,7 +125,8 @@ nav {
 
 			li{
 						display: inline;
-						margin-right: 40px;
+    					margin-right: 56px;
+    					font-size: 14px;
 
 						img {
 							height:12px;
@@ -129,19 +158,58 @@ main section p{
 padding: 13px 0px;
 	background-color: yellow;
 	text-align: center;
-	margin: 0px 5px;
-	width: 15px;
+	margin-top: 250px;
+	// margin: 0px 5px;
 }
+
+.stick {
+	margin-top: 200px;
+	margin-right: -60px;
+	text-align: right;
+	
+	ul {
+		position: fixed;
+		li {
+
+
+			display: block;
+
+			a:link {
+
+				color:white;
+			}
+
+			a:visited {
+				color: white;
+			}
+
+			a:hover{
+			color:blue;
+			}
+
+			a:active{
+				color:white;
+			}
+
+
+
+		}
+	}
+}
+
+
 
 section.intro {
 	p{
 
-	font-size: 25px;
+
+	font-size: 28px;
+	line-height: 50px;
 	}
 }
 
 main section img {
-	margin-right: 20px;
+	// margin-right: 20px;
 	margin-bottom: 50px;
 
 }
@@ -151,17 +219,26 @@ main section {
 	display: inline;
 }
 
-main div {	margin-top: 100px;
+main div {	
+	margin-top: -90px;
 }
+
+main {
+}
+
+
 
 // susy desktop
 
+
 header {
 	@include span (5);
+
 }
 
 nav {
-	@include span (6 last);
+	@include span (7 last);
+
 }
 
 section.intro {
@@ -177,14 +254,24 @@ h2 {
 }
 
 main section img {
-	@include span (8);
+	@include span (7);
+	margin-right: 0px;
 
 }
 
 main section p {
-	@include span (3 last);
+	@include span (3);
 	width: 20%
+	// padding-left: 20px;
+	// padding-right: 
 }
+
+.stick {
+	@include span (2 last)
+
+}
+
+
 
 main p {
 	@include span (12);
@@ -195,13 +282,19 @@ main p {
 
 @include susy-breakpoint($tablet) {
 
+	section.top {
+		margin-left: 30px;
+	}
+
 	header {
 		@include span (12);
+		margin-bottom: 0px;
 	}
 	nav {
 		margin-top: 0px;
 		margin-left: 0px;
 		@include span (12);
+		font-size: 20px;
 	}
 		
 		main{
@@ -224,11 +317,17 @@ main p {
 		margin-left: 0px;
 		@include span (12);
 		margin-bottom: 30px;
-		text-align: center;
+		
 
 		ul {
+			text-align: center;
 				li {
 		display: block;
+		font-size: 22px;
+		margin-bottom: 10px;
+		background-color: rgba(0,0,0,.1);
+		margin-right: 0px;
+
 	}
 		}
 

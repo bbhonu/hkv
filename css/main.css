@@ -134,6 +134,35 @@ textarea {
 header {
   font-family: "luculent-bolditalic";
   font-size: 36px;
+  word-spacing: -12px;
+}
+
+.kern {
+  letter-spacing: -1px;
+}
+
+.kern2 {
+  letter-spacing: 2px;
+}
+
+.kern3 {
+  letter-spacing: 2px;
+}
+
+.kern4 {
+  letter-spacing: -1px;
+}
+
+.kern5 {
+  letter-spacing: 2px;
+}
+
+.kern6 {
+  letter-spacing: -6px;
+}
+
+.kern7 {
+  letter-spacing: 1px;
 }
 
 .container {
@@ -178,6 +207,10 @@ header {
   margin-bottom: 20px;
 }
 
+section.top {
+  margin-top: 40px;
+}
+
 nav {
   font-family: "luculent";
   font-size: 12px;
@@ -185,7 +218,8 @@ nav {
 }
 nav ul li {
   display: inline;
-  margin-right: 40px;
+  margin-right: 56px;
+  font-size: 14px;
 }
 nav ul li img {
   height: 12px;
@@ -209,16 +243,39 @@ main section p {
   padding: 13px 0px;
   background-color: yellow;
   text-align: center;
-  margin: 0px 5px;
-  width: 15px;
+  margin-top: 250px;
+}
+
+.stick {
+  margin-top: 200px;
+  margin-right: -60px;
+  text-align: right;
+}
+.stick ul {
+  position: fixed;
+}
+.stick ul li {
+  display: block;
+}
+.stick ul li a:link {
+  color: white;
+}
+.stick ul li a:visited {
+  color: white;
+}
+.stick ul li a:hover {
+  color: blue;
+}
+.stick ul li a:active {
+  color: white;
 }
 
 section.intro p {
-  font-size: 25px;
+  font-size: 28px;
+  line-height: 50px;
 }
 
 main section img {
-  margin-right: 20px;
   margin-bottom: 50px;
 }
 
@@ -228,7 +285,7 @@ main section {
 }
 
 main div {
-  margin-top: 100px;
+  margin-top: -90px;
 }
 
 header {
@@ -238,7 +295,7 @@ header {
 }
 
 nav {
-  width: 49.15254%;
+  width: 57.62712%;
   float: right;
   margin-right: 0;
 }
@@ -265,16 +322,23 @@ h2 {
 }
 
 main section img {
-  width: 66.10169%;
+  width: 57.62712%;
   float: left;
   margin-right: 1.69492%;
+  margin-right: 0px;
 }
 
 main section p {
   width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+  width: 20%;
+}
+
+.stick {
+  width: 15.25424%;
   float: right;
   margin-right: 0;
-  width: 20%;
 }
 
 main p {
@@ -285,11 +349,16 @@ main p {
 }
 
 @media (min-width: 570px) and (max-width: 899px) {
+  section.top {
+    margin-left: 30px;
+  }
+
   header {
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 0px;
   }
 
   nav {
@@ -299,6 +368,7 @@ main p {
     float: left;
     margin-left: 0;
     margin-right: 0;
+    font-size: 20px;
   }
 
   main {
@@ -325,10 +395,16 @@ main p {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 30px;
+  }
+  nav ul {
     text-align: center;
   }
   nav ul li {
     display: block;
+    font-size: 22px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-right: 0px;
   }
 
   main section {
