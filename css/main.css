@@ -25,18 +25,6 @@ html, body {
   height: 54px;
 }
 
-.container {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 960px;
-}
-.container:after {
-  content: " ";
-  display: block;
-  clear: both;
-}
-
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -165,16 +153,17 @@ header {
   letter-spacing: 1px;
 }
 
+body {
+  background-color: #1a1a1a;
+}
+
 .container {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   width: 960px;
-  background-color: white;
-}
-
-.black {
   background-color: black;
+  z-index: 10;
 }
 
 *,
@@ -204,23 +193,31 @@ a:active {
 }
 
 header {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding-right: 40px;
+  padding-left: 50px;
+}
+
+.container {
+  background-color: black;
 }
 
 section.top {
   padding-top: 40px;
-  color: black;
+  color: white;
 }
 
 section.intro {
-  margin-top: 100px;
-  color: black;
+  padding-top: 100px;
+  color: white;
 }
 
 nav {
   font-family: "luculent";
   font-size: 12px;
-  margin-top: 35px;
+  padding-top: 35px;
+  padding-left: 10px;
+  padding-right: 20px;
 }
 nav ul li {
   display: inline;
@@ -250,6 +247,10 @@ main section p {
   background-color: yellow;
   text-align: center;
   margin-top: 250px;
+}
+
+main {
+  background-color: white;
 }
 
 .stick {
@@ -296,10 +297,6 @@ main section {
   display: inline;
 }
 
-main div {
-  margin-top: -85px;
-}
-
 header {
   width: 40.67797%;
   float: left;
@@ -310,6 +307,7 @@ nav {
   width: 57.62712%;
   float: right;
   margin-right: 0;
+  padding-right: 20px;
 }
 
 section.intro {

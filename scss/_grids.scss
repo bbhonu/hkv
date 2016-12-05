@@ -10,10 +10,10 @@ $susy: (
 @include border-box-sizing;
 @include sticky-footer(54px);
 
-.container {
-	@include container;
-	width:960px;
-}
+// .container {
+// 	@include container;
+// 	width:960px;
+// }
 
 // phone/tablet/desktop
 // phone/tablet/desktop

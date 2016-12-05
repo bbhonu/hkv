@@ -55,18 +55,20 @@ header {
 }
 
 
+body {
+	background-color: rgba(26,26,26,1);
+}
 
 .container {
 max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     width: 960px;
-    background-color: white;
+    background-color: black;
+    z-index: 10;
 }
 
-.black {
-	background-color: black;
-}
+
 
 
 
@@ -106,25 +108,34 @@ a:active{
 
 header {
 
-	margin-bottom: 20px;
+	padding-bottom: 20px;
+padding-right: 40px;
+padding-left: 50px;
+}
+
+.container {
+	background-color: black;
 }
 
 section.top {
 	padding-top: 40px;
-	color: black;
+	color: white;
 	
 }
 
 section.intro {
-	margin-top: 100px;
-	color:black;
+	padding-top: 100px;
+	color:white;
 }
 
 
 nav {
 	font-family: "luculent";
 	font-size: 12px;
-	margin-top: 35px;
+	padding-top: 35px;
+	padding-left: 10px;
+	padding-right: 20px;
+
 
 
 	ul {
@@ -168,10 +179,15 @@ padding: 13px 0px;
 	// margin: 0px 5px;
 }
 
+main {
+	background-color: white;
+}
 .stick {
 	margin-top: 157px;
 	text-align: right;
 	height: 20%;
+
+// bottom margin for up resize window ????
 	
 	ul {
 			margin-right: -60px;
@@ -234,9 +250,6 @@ main section {
 	display: inline;
 }
 
-main div {	
-	margin-top: -85px;
-}
 
 main {
 }
@@ -253,6 +266,7 @@ header {
 
 nav {
 	@include span (7 last);
+	padding-right: 20px;
 
 }
 
